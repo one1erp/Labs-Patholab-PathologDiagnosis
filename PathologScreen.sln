@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ONE1_richTextCtrl", "..\ONE1_richTextCtrl\ONE1_richTextCtrl.csproj", "{328531B6-57F7-4853-AF95-46798933D063}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathologDiagnosis", "PathologDiagnosis\PathologDiagnosis.csproj", "{36146FD2-BBE0-46AD-BECF-4028471FD15F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patholab_DAL_V1", "..\Patholab_DAL_V1\Patholab_DAL_V1\Patholab_DAL_V1.csproj", "{654B85EA-0ADD-42AD-AA0A-FAE4CB001F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatholabWorkList", "..\PatholabWorkList\PatholabWorkList\PatholabWorkList.csproj", "{9D8C5E45-ADAB-4670-B4CA-1B4E1E5D1897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathologResultEntry", "..\PathologResultEntry\PathologResultEntry\PathologResultEntry.csproj", "{2C27008E-5163-4F3A-803A-6CB85F1C77B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacsDigital", "..\PacsDigital\PacsDigital\PacsDigital.csproj", "{C99668A0-FED6-4599-92D0-5AA6DFE43D65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{328531B6-57F7-4853-AF95-46798933D063}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{328531B6-57F7-4853-AF95-46798933D063}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{328531B6-57F7-4853-AF95-46798933D063}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{328531B6-57F7-4853-AF95-46798933D063}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36146FD2-BBE0-46AD-BECF-4028471FD15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36146FD2-BBE0-46AD-BECF-4028471FD15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36146FD2-BBE0-46AD-BECF-4028471FD15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36146FD2-BBE0-46AD-BECF-4028471FD15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654B85EA-0ADD-42AD-AA0A-FAE4CB001F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654B85EA-0ADD-42AD-AA0A-FAE4CB001F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654B85EA-0ADD-42AD-AA0A-FAE4CB001F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654B85EA-0ADD-42AD-AA0A-FAE4CB001F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D8C5E45-ADAB-4670-B4CA-1B4E1E5D1897}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D8C5E45-ADAB-4670-B4CA-1B4E1E5D1897}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D8C5E45-ADAB-4670-B4CA-1B4E1E5D1897}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D8C5E45-ADAB-4670-B4CA-1B4E1E5D1897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C27008E-5163-4F3A-803A-6CB85F1C77B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C27008E-5163-4F3A-803A-6CB85F1C77B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C27008E-5163-4F3A-803A-6CB85F1C77B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C27008E-5163-4F3A-803A-6CB85F1C77B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99668A0-FED6-4599-92D0-5AA6DFE43D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99668A0-FED6-4599-92D0-5AA6DFE43D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99668A0-FED6-4599-92D0-5AA6DFE43D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99668A0-FED6-4599-92D0-5AA6DFE43D65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,43 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:local="clr-namespace:PathologDiagnosis" x:Class="PathologDiagnosis.PathologDiagnosisWPF" 
+    mc:Ignorable="d" MinHeight="600"  MinWidth="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost x:Name="winformsHostMacro"  Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <WindowsFormsHost x:Name="winformsHostDiagnos"  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" ChildChanged="winformsHostDiagnos_ChildChanged"/>
+        <WindowsFormsHost x:Name="winformsHostMicro"  Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="4"/>
+        <Label x:Name="labelMicro" Content="Micro:" Grid.Column="0" Grid.Row="2"/>
+        <Label x:Name="labelDiagnos" Content="Diagnosis:" Grid.Column="0"/>
+        <Label x:Name="labelMacro" Content="Macro:" Grid.Column="2"/>
+        <!--<CheckBox x:Name="checkBoxSaveWord" Content="Save Word File" Grid.Column="3" Grid.Row="2"/>-->
+
+    </Grid>
+
+        <!--<Grid Margin="10,0,0,10" HorizontalAlignment="Left" Width="1057">
+        <DockPanel x:Name="dockPanel1" HorizontalAlignment="Left" Height="245" LastChildFill="False" Margin="10,58,0,0" VerticalAlignment="Top" Width="1037">
+         
+        </DockPanel>
+        <DockPanel x:Name="dockPanel2" HorizontalAlignment="Left" Height="252" LastChildFill="False" Margin="10,364,0,0" VerticalAlignment="Top" Width="1037">
+            <WindowsFormsHost x:Name="winformsHostMicro" Height="247" VerticalAlignment="Top" Width="1028"/>
+        </DockPanel>
+        <Label x:Name="labelMicro" Content="Micro:" HorizontalAlignment="Left" Margin="10,326,0,0" VerticalAlignment="Top" Height="31" Width="122" RenderTransformOrigin="1.387,10.21" FontSize="14" Background="Gray"/>
+        <Label x:Name="labelDiagnos" Content="Diagnos:" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top" Width="122" FontSize="14" Background="Gray"/>
+        <Label x:Name="labelMacro" Content="Macro:" HorizontalAlignment="Left" Margin="540,24,0,0" VerticalAlignment="Top" Width="122" FontSize="14" Background="Gray"/>
+
+    </Grid>-->
+</UserControl>
