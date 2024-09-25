@@ -245,28 +245,35 @@ namespace PathologDiagnosis
         }
         private void initRichTextControls()
         {
-            if (richTextMicro == null) richTextMicro = new ONE1_richTextCtrl.RichSpellCtrl();
-            if (richTextMacro == null) richTextMacro = new ONE1_richTextCtrl.RichSpellCtrl();
-            if (richTextDiagnosis == null) richTextDiagnosis = new ONE1_richTextCtrl.RichSpellCtrl();
-
-            richSpellCtrls = new List<ONE1_richTextCtrl.RichSpellCtrl>();
-            richSpellCtrls.Add(richTextMacro);
-            richSpellCtrls.Add(richTextDiagnosis);
-            richSpellCtrls.Add(richTextMicro);
-
-
-            foreach (var item in richSpellCtrls)
+            Logger.WriteLogFile("before initRichTextControls");
+            try
             {
-                item.SetDefaultSpelling();
-                item.RightToLeft = forms.RightToLeft.Yes;
+                if (richTextMicro == null) richTextMicro = new ONE1_richTextCtrl.RichSpellCtrl();
+                if (richTextMacro == null) richTextMacro = new ONE1_richTextCtrl.RichSpellCtrl();
+                if (richTextDiagnosis == null) richTextDiagnosis = new ONE1_richTextCtrl.RichSpellCtrl();
 
+                richSpellCtrls = new List<ONE1_richTextCtrl.RichSpellCtrl>();
+                richSpellCtrls.Add(richTextMacro);
+                richSpellCtrls.Add(richTextDiagnosis);
+                richSpellCtrls.Add(richTextMicro);
+
+
+                foreach (var item in richSpellCtrls)
+                {
+                    item.SetDefaultSpelling();
+                    item.RightToLeft = forms.RightToLeft.Yes;
+
+                }
+
+                winformsHostMacro.Child = richTextMacro;
+                winformsHostDiagnos.Child = richTextDiagnosis;
+                winformsHostMicro.Child = richTextMicro;
+
+                richTextMicro.DocumentBody.MouseDoubleClick += this.rtbDocument_MouseDoubleClick;
             }
-
-            winformsHostMacro.Child = richTextMacro;
-            winformsHostDiagnos.Child = richTextDiagnosis;
-            winformsHostMicro.Child = richTextMicro;
-
-            richTextMicro.DocumentBody.MouseDoubleClick += this.rtbDocument_MouseDoubleClick;
+            catch (Exception ex) {
+                Logger.WriteLogFile($"while initRichTextControls: {ex}");
+            }
         }
         // button to open micro as word process
         private void rtbDocument_MouseDoubleClick(object sender, forms.MouseEventArgs e)
